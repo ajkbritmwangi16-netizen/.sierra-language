@@ -2,3 +2,65 @@
 <main>
 </main>
 </end>
+</>Sierra</>
+<main>
+<kernel block="memory">
+</kernel>
+</main>
+</end>
+<drive name="identifier">
+</drive>
+</>Sierra</>
+<main>
+
+<kernel block="memory">
+</kernel>
+
+<drive name="system">
+</drive>
+
+</main>
+</end>
+<drive name="system">
+/>type nvme</
+/>encryption required</
+/>mount /</
+</drive>
+<boot>
+</boot>
+/>require kernel "name"</
+/>require drive "name"</
+</>Sierra</>
+<main>
+
+<kernel block="memory">
+</kernel>
+
+<drive name="system">
+</drive>
+
+<boot>
+/>require kernel "memory"</
+/>require drive "system"</
+</boot>
+
+</main>
+</end>
+</>Sierra</>
+<main>
+
+<kernel block="memory">
+/>region "system" size="2048" unit="MB"</
+/>region "user" size="4096" unit="MB"</
+</kernel>
+
+<drive name="system">
+</drive>
+
+<boot>
+/>require kernel "memory"</
+/>require drive "system"</
+</boot>
+
+</main>
+</end>
